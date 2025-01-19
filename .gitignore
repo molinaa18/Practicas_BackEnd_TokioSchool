@@ -1,0 +1,19 @@
+# Compilados por el compilador de Java
+*.class
+
+# Carpetas generadas por Eclipse
+/bin/
+/.settings/
+.classpath
+.project
+
+# Carpetas de herramientas de construcción
+/target/
+/build/
+
+# Archivos de registro
+*.log
+
+# Archivos empaquetados
+*.jar
+*.war
