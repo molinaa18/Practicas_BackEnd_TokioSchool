@@ -16,7 +16,7 @@ public class M1_02_Javier_Molina_Garcia {
 		System.out.println(2 * (a + c - b) / (b * c));
 		System.out.println(((a * c) + (b % a)) / a - c);
 
-		System.out.println("Por favor, introzca tres números con decimales: ");
+		System.out.println("Por favor, introduzca tres números con decimales: ");
 		Scanner inputDouble = new Scanner(System.in);
 		double x = inputDouble.nextDouble();
 		double y = inputDouble.nextDouble();
