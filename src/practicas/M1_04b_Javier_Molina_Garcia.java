@@ -8,17 +8,18 @@ public class M1_04b_Javier_Molina_Garcia {
 		int contadorEspacios = 0;
 		char caracter;
 
-		System.out.println("Introduce caracteres o frases completas. Escribe '.' para finalizar.");
-
+		System.out.println("Por favor, introduzca un texto de una o varias líneas, escribiendo '.' para finalizar: ");
+		// Uso de do...while para asegurar que se ejecuta al menos una vez.
 		do {
+			// Cada ejecución actualiza la var "caracter" con el byte leído.
 			caracter = (char) System.in.read();
 
 			if (caracter == ' ') {
 				contadorEspacios++;
 			}
-
+		// El bucle se sigue ejecutando siempre que el byte leído no sea '.'
 		} while (caracter != '.');
 
-		System.out.println("Número total de espacios: " + contadorEspacios);
+		System.out.println("El número de espacios del texto es = " + contadorEspacios);
 	}
 }
