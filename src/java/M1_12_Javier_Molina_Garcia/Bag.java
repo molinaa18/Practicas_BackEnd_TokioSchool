@@ -1,4 +1,4 @@
-package java.M1_12_Javier_Molina_Garcia;
+package M1_12_Javier_Molina_Garcia;
 
 import java.util.ArrayList;
 import java.util.List;

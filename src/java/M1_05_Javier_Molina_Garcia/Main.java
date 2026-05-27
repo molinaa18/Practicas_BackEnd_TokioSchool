@@ -1,4 +1,4 @@
-package java.M1_05_Javier_Molina_Garcia;
+package M1_05_Javier_Molina_Garcia;
 
 import java.util.Scanner;
 

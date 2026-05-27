@@ -1,4 +1,4 @@
-package java.M1_15_Javier_Molina_Garcia;
+package M1_15_Javier_Molina_Garcia;
 
 public class Carta {
 	

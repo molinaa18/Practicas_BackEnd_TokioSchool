@@ -1,4 +1,4 @@
-package java.M2_05_Javier_Molina_Garcia;
+package M2_05_Javier_Molina_Garcia;
 
 public enum Palo {
     ESPADAS('E'),

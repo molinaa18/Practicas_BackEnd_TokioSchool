@@ -1,4 +1,4 @@
-package java.M1_17_Javier_Molina_Garcia;
+package M1_17_Javier_Molina_Garcia;
 
 import java.util.Comparator;
 

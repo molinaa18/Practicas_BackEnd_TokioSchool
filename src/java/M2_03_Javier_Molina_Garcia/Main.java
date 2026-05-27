@@ -1,12 +1,12 @@
-package java.M2_03_Javier_Molina_Garcia;
+package M2_03_Javier_Molina_Garcia;
 
 import java.io.*;
 import java.nio.file.*;
 
 public class Main {
     public static void main(String[] args) {
-        String path = "src/java.M2_03_Javier_Molina_Garcia/TextFile.txt";
-        String tmpPath = "src/java.M2_03_Javier_Molina_Garcia/TextFile_tmp.txt";
+        String path = "src/results/TextFile.txt";
+        String tmpPath = "src/results/TextFile_tmp.txt";
 
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))) {
             for (int i = 0; i < 3; i++) bw.write("1");

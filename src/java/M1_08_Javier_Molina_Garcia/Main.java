@@ -1,4 +1,4 @@
-package java.M1_08_Javier_Molina_Garcia;
+package M1_08_Javier_Molina_Garcia;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package java.M2_02_Javier_Molina_Garcia;
+package M2_02_Javier_Molina_Garcia;
 
 import java.io.*;
 
@@ -7,7 +7,7 @@ public class Main {
     public void procesarFichero() {
         // Rutas según las buenas prácticas
         String rutaOrigen = "/M2_02/Origen.txt";
-        String rutaDestino = "M2_02_Destino.txt"; // Se creará en la raíz del proyecto
+        String rutaDestino = "src/results/M2_02_Destino.txt"; // Se creará en la raíz del proyecto
 
         // Uso de Try-with-resources para cerrar automáticamente todos los flujos
         try (

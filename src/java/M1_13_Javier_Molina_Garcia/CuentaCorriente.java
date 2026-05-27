@@ -1,4 +1,4 @@
-package java.M1_13_Javier_Molina_Garcia;
+package M1_13_Javier_Molina_Garcia;
 
 class CuentaCorriente extends CuentaBancaria {
 

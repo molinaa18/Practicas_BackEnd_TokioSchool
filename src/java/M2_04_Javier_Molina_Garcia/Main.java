@@ -1,4 +1,4 @@
-package java.M2_04_Javier_Molina_Garcia;
+package M2_04_Javier_Molina_Garcia;
 
 public class Main {
     public static void main(String[] args) {

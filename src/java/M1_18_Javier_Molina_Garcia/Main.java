@@ -1,4 +1,4 @@
-package java.M1_18_Javier_Molina_Garcia;
+package M1_18_Javier_Molina_Garcia;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

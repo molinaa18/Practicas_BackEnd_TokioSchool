@@ -1,4 +1,4 @@
-package java.M1_10_Javier_Molina_Garcia;
+package M1_10_Javier_Molina_Garcia;
 
 public class Main {
 
