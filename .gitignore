@@ -17,3 +17,14 @@
 # Archivos empaquetados
 *.jar
 *.war
+
+# Ignorar las carpetas de configuración de IntelliJ
+.idea/
+*.iml
+out/
+
+# Ignorar las carpetas de compilación de Maven en cualquier subproyecto
+**/target/
+
+# Ignorar archivos temporales que genera el plugin de Maven
+**/dependency-reduced-pom.xml
