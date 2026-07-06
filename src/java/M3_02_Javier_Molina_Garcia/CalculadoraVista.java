@@ -35,7 +35,7 @@ public class CalculadoraVista extends JFrame {
     public CalculadoraVista() {
         listaBotones = new ArrayList<>();
 
-        // 1. Aplicar el estilo visual (Look & Feel) ANTES de crear nada
+        // 1. Aplicar el estilo visual (Look & Feel) del SO
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (Exception e) {
@@ -60,12 +60,7 @@ public class CalculadoraVista extends JFrame {
         JPanel panelTeclado = new JPanel();
         panelTeclado.setLayout(new GridLayout(4, 4, 15, 15));
 
-        String[] textosBotones = {
-                "1", "2", "3", "+",
-                "4", "5", "6", "-",
-                "7", "8", "9", "*",
-                "0", ".", "=", "/"
-        };
+        String[] textosBotones = {"1", "2", "3", "+", "4", "5", "6", "-", "7", "8", "9", "*", "0", ".", "=", "/"};
 
         for (String texto : textosBotones) {
             JButton boton = new JButton(texto);
@@ -79,18 +74,14 @@ public class CalculadoraVista extends JFrame {
         JPanel panelAcciones = crearPanelAcciones();
         panelPrincipal.add(panelAcciones, BorderLayout.EAST);
 
-        // =========================================================
-        // 6. CONFIGURACIÓN FINAL DE LA VENTANA (SIEMPRE AL FINAL)
-        // =========================================================
+        // 6. Configuración final de la ventana
         setContentPane(panelPrincipal); // Metemos todo el contenido
         setTitle("Calculadora Tokio");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        pack(); // MÁGIA: Obliga a Swing a calcular y distribuir los tamaños de todo
-
-        setSize(500, 400); // Forzamos nuestro tamaño deseado
-        setLocationRelativeTo(null); // Ahora sí, centramos la ventana sabiendo su tamaño real
-        setResizable(false); // Bloqueamos el tamaño
+        pack();
+        setSize(500, 400);
+        setLocationRelativeTo(null);
+        setResizable(false);
     }
 
     /**
@@ -123,20 +114,7 @@ public class CalculadoraVista extends JFrame {
         return panelAcciones;
     }
 
-    // =========================================================
-    // MÉTODOS DE COMUNICACIÓN CON EL CONTROLADOR (GETTERS/SETTERS)
-    // =========================================================
-
-    /**
-     * Recorre todos los botones creados y les asigna el controlador
-     * encargado de escuchar los clics.
-     * @param controlador El objeto que implementa ActionListener.
-     */
-    public void setControlador(ActionListener controlador) {
-        for (JButton boton : listaBotones) {
-            boton.addActionListener(controlador);
-        }
-    }
+    // Getters&Setters\
 
     /**
      * Devuelve el texto actual mostrado en la pantalla de la calculadora.
@@ -147,9 +125,24 @@ public class CalculadoraVista extends JFrame {
 
     /**
      * Modifica el texto que se muestra en la pantalla de la calculadora.
+     *
      * @param texto El nuevo texto a mostrar.
      */
     public void setDisplayTexto(String texto) {
         display.setText(texto);
     }
+
+    /**
+     * Recorre todos los botones creados y les asigna el controlador
+     * encargado de escuchar los clics.
+     *
+     * @param controlador El objeto que implementa ActionListener.
+     */
+    public void setControlador(ActionListener controlador) {
+        for (JButton boton : listaBotones) {
+            boton.addActionListener(controlador);
+        }
+    }
+
+
 }

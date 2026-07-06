@@ -11,13 +11,19 @@ package M3_02_Javier_Molina_Garcia;
  */
 public class CalculadoraModelo {
 
-    /** Índice que rastrea la posición actual dentro de la cadena de texto. */
+    /**
+     * Índice que rastrea la posición actual dentro de la cadena de texto.
+     */
     private int pos = -1;
 
-    /** Representación en código numérico (ASCII) del carácter que se analiza actualmente. */
+    /**
+     * Representación en código numérico (ASCII) del carácter que se analiza actualmente.
+     */
     private int ch;
 
-    /** La expresión matemática a evaluar (ej. "2+3*4"). */
+    /**
+     * La expresión matemática a evaluar (ej. "2+3*4").
+     */
     private String str;
 
     /**
@@ -69,13 +75,13 @@ public class CalculadoraModelo {
      *
      * @return El resultado final de toda la expresión matemática.
      * @throws RuntimeException Si al terminar la evaluación el puntero no ha llegado
-     * al final de la cadena, indicando que hay caracteres inválidos.
+     *                          al final de la cadena, indicando que hay caracteres inválidos.
      */
     private double parse() {
         nextChar();
         double x = parseExpression();
         if (pos < str.length()) {
-            throw new RuntimeException("Carácter inesperado: " + (char)ch);
+            throw new RuntimeException("Carácter inesperado: " + (char) ch);
         }
         return x;
     }
@@ -89,8 +95,8 @@ public class CalculadoraModelo {
      */
     private double parseExpression() {
         double x = parseTerm();
-        for (;;) {
-            if      (eat('+')) x += parseTerm(); // Suma
+        for (; ; ) {
+            if (eat('+')) x += parseTerm(); // Suma
             else if (eat('-')) x -= parseTerm(); // Resta
             else return x;
         }
@@ -105,8 +111,8 @@ public class CalculadoraModelo {
      */
     private double parseTerm() {
         double x = parseFactor();
-        for (;;) {
-            if      (eat('*')) x *= parseFactor(); // Multiplicación
+        for (; ; ) {
+            if (eat('*')) x *= parseFactor(); // Multiplicación
             else if (eat('/')) x /= parseFactor(); // División
             else return x;
         }
@@ -130,7 +136,7 @@ public class CalculadoraModelo {
             while ((ch >= '0' && ch <= '9') || ch == '.') nextChar();
             x = Double.parseDouble(str.substring(startPos, this.pos));
         } else {
-            throw new RuntimeException("Carácter inesperado: " + (char)ch);
+            throw new RuntimeException("Carácter inesperado: " + (char) ch);
         }
         return x;
     }
