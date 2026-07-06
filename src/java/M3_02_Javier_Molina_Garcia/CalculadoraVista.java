@@ -114,7 +114,7 @@ public class CalculadoraVista extends JFrame {
         return panelAcciones;
     }
 
-    // Getters&Setters\
+    // Getters&Setters
 
     /**
      * Devuelve el texto actual mostrado en la pantalla de la calculadora.
