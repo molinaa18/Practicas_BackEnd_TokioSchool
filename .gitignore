@@ -28,3 +28,4 @@ out/
 
 # Ignorar archivos temporales que genera el plugin de Maven
 **/dependency-reduced-pom.xml
+/.idea/
