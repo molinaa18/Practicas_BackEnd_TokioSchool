@@ -6,10 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="hello-world-maven" />
+        <module name="M3_03_Javier_Molina_Garcia" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="hello-world-maven" target="26" />
-    </bytecodeTargetLevel>
   </component>
 </project>
