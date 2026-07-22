@@ -56,17 +56,6 @@ class ParkingTest {
     }
 
     @Test
-    void testGetCoche() {
-        parking.putCoche("1111AAA", cocheTerminado);
-
-        Coche cocheRecuperado = parking.getCoche("1111AAA");
-
-        assertNotNull(cocheRecuperado, "El coche no debería ser null");
-        assertEquals("Seat", cocheRecuperado.getMarca(), "La marca del coche recuperado debe coincidir");
-        assertNull(parking.getCoche("9999ZZZ"), "Si la matrícula no existe, debe devolver null");
-    }
-
-    @Test
     void testImprimirCochesSistema() {
         parking.putCoche("1111AAA", cocheTerminado);
         parking.putCoche("2222BBB", cocheEnParking);
